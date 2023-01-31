@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">Shopos Api</string>
+    <string name="app_name">Sophos Api</string>
+    <string name="correo">Correo Electrónico</string>
+    <string name="email">Email</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="password">Password</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="login">Login</string>
+    <string name="login_bm">Biometric Login</string>
+    <string name="ingresar_bm">Ingresar con huella</string>
+    <string name="indicacion">Ingresa tus datos para acceder</string>
+    <string name="titulo_docs">Documentos</string>
 </resources>

@@ -10,6 +10,9 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.lifecycle.viewmodel.compose.viewModel
+import com.example.shoposapi.domain.LoginViewModel
+import com.example.shoposapi.ui.LoginScreen
 import com.example.shoposapi.ui.theme.ShoposApiTheme
 
 class MainActivity : ComponentActivity() {
@@ -21,9 +24,17 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-
+                    // LoginScreen()
+                    DataLoaded()
                 }
             }
         }
     }
+}
+
+@Composable
+fun DataLoaded() {
+    val viewModel: LoginViewModel = viewModel()
+    // Text(text = "Datos de la API")
+    Text(text = viewModel.LoginState)
 }
